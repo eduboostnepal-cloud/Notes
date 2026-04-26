@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NEB Class 12 English – Complete Literature Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --navy:#0d1b2a;
+  --blue:#1b4f8a;
+  --sky:#2e86de;
+  --gold:#f5a623;
+  --amber:#e67e22;
+  --cream:#faf8f3;
+  --white:#ffffff;
+  --red:#c0392b;
+  --green:#1e8449;
+  --gray:#6b7280;
+  --light:#eef2f7;
+  --border:#d1d9e6;
+  --shadow:0 4px 24px rgba(13,27,42,0.10);
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--navy);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.7;min-height:100vh}
+
+/* ── TOP NAV ── */
+.topbar{background:var(--navy);color:#fff;padding:0 20px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.3)}
+.topbar-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:16px;height:54px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.topbar-inner::-webkit-scrollbar{display:none}
+.topbar-logo{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--gold);flex-shrink:0;margin-right:8px}
+.nav-pill{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,0.08);color:#c8d6e8;font-size:0.75rem;font-weight:500;padding:5px 12px;border-radius:20px;cursor:pointer;border:1px solid rgba(255,255,255,0.1);transition:all .2s;text-decoration:none;flex-shrink:0}
+.nav-pill:hover,.nav-pill.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#1b3a6b 60%,#0d2d5e 100%);color:#fff;padding:60px 20px 50px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.hero-badge{display:inline-block;background:var(--gold);color:var(--navy);font-size:0.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:18px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3.2rem);font-weight:700;line-height:1.2;margin-bottom:12px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero-sub{font-size:0.95rem;color:#a8bdd6;max-width:600px;margin:0 auto 24px}
+.hero-stats{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-top:8px}
+.stat{text-align:center}
+.stat-n{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--gold)}
+.stat-l{font-size:0.72rem;color:#8aaccc;text-transform:uppercase;letter-spacing:.08em}
+
+/* ── LAYOUT ── */
+.container{max-width:1000px;margin:0 auto;padding:0 16px}
+
+/* ── SECTION HEADER ── */
+.section-head{display:flex;align-items:center;gap:14px;padding:36px 0 20px}
+.section-icon{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.icon-story{background:linear-gradient(135deg,#1b4f8a,#2e86de)}
+.icon-poem{background:linear-gradient(135deg,#6c3483,#9b59b6)}
+.icon-essay{background:linear-gradient(135deg,#1e8449,#27ae60)}
+.icon-play{background:linear-gradient(135deg,#922b21,#e74c3c)}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,4vw,1.9rem);font-weight:700;color:var(--navy)}
+.section-title span{display:block;font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:var(--gray);font-style:normal;margin-top:2px;letter-spacing:.04em}
+
+/* ── CHAPTER CARD ── */
+.chapter{background:var(--white);border-radius:14px;border:1px solid var(--border);margin-bottom:28px;overflow:hidden;box-shadow:var(--shadow);animation:up .5s ease both}
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+.ch-header{padding:20px 24px 16px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:14px;cursor:pointer;position:relative}
+.ch-num{flex-shrink:0;width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#fff;background:var(--blue)}
+.ch-num.purple{background:#7d3c98}
+.ch-num.green{background:#1e8449}
+.ch-num.red{background:#c0392b}
+.ch-meta{flex:1}
+.ch-title{font-family:'Playfair Display',serif;font-size:clamp(1rem,3vw,1.2rem);font-weight:700;color:var(--navy);line-height:1.3}
+.ch-author{font-size:0.78rem;color:var(--gray);margin-top:3px}
+.ch-author strong{color:var(--sky)}
+.ch-toggle{font-size:1.2rem;color:var(--gray);transition:transform .3s;margin-top:4px;flex-shrink:0}
+.ch-header.open .ch-toggle{transform:rotate(180deg)}
+
+.ch-body{display:none;padding:24px}
+.ch-body.open{display:block}
+
+/* REPEATED BADGE */
+.repeated{display:inline-flex;align-items:center;gap:5px;background:#fff3cd;border:1px solid #f0c040;color:#856404;font-size:0.68rem;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.08em}
+
+/* TABS */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;border-bottom:2px solid var(--border);padding-bottom:10px}
+.tab-btn{background:none;border:none;font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;color:var(--gray);padding:6px 14px;border-radius:6px;cursor:pointer;transition:all .2s}
+.tab-btn.active,.tab-btn:hover{background:var(--blue);color:#fff}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+
+/* SUMMARY */
+.summary-text{font-size:0.92rem;line-height:1.8;color:#2c3e50;margin-bottom:14px}
+.summary-text p+p{margin-top:10px}
+
+/* THEME CHIPS */
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}
+.chip{font-size:0.72rem;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.04em}
+.chip-theme{background:#e8f4fd;color:#1b4f8a;border:1px solid #bdd5f0}
+.chip-char{background:#fef0e0;color:#a04000;border:1px solid #f0c090}
+.chip-device{background:#e8f8ee;color:#1e6630;border:1px solid #90d0a8}
+
+/* Q&A BLOCKS */
+.qa-block{margin-bottom:16px;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+.qa-q{background:var(--light);padding:12px 16px;font-size:0.87rem;font-weight:600;color:var(--navy);display:flex;align-items:flex-start;gap:10px}
+.qa-mark{flex-shrink:0;background:var(--blue);color:#fff;font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:10px;margin-top:2px}
+.qa-mark.five{background:var(--red)}
+.qa-a{background:#fff;padding:14px 16px;font-size:0.86rem;line-height:1.8;color:#2c3e50}
+.qa-a ul{padding-left:16px;margin-top:6px}
+.qa-a ul li{margin-bottom:5px}
+.qa-a strong{color:var(--blue)}
+.qa-a .conc{font-style:italic;color:#5a6a7a;border-top:1px dashed var(--border);margin-top:10px;padding-top:8px}
+.hot-tag{display:inline-flex;align-items:center;gap:4px;background:#fff0f0;border:1px solid #f5b7b1;color:#c0392b;font-size:0.65rem;font-weight:700;padding:2px 8px;border-radius:10px;margin-left:8px;text-transform:uppercase}
+
+/* DEVICES TABLE */
+.dev-table{width:100%;border-collapse:collapse;font-size:0.84rem;margin-top:8px}
+.dev-table th{background:var(--navy);color:#fff;padding:8px 12px;text-align:left;font-weight:600}
+.dev-table td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.dev-table tr:last-child td{border-bottom:none}
+.dev-table tr:nth-child(even) td{background:#f8fafc}
+
+/* SCROLL TOP */
+.scroll-top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:var(--navy);color:#fff;border:none;border-radius:50%;font-size:1.2rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.2);z-index:200;transition:transform .2s}
+.scroll-top:hover{transform:translateY(-3px)}
+
+/* FOOTER */
+footer{background:var(--navy);color:#8aaccc;text-align:center;padding:30px 20px;margin-top:60px;font-size:0.8rem}
+footer strong{color:var(--gold)}
+
+@media(max-width:600px){
+  .ch-body{padding:16px}
+  .hero-stats{gap:18px}
+  .tabs{gap:4px}
+  .tab-btn{font-size:0.72rem;padding:5px 10px}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topbar">
+  <div class="topbar-inner">
+    <span class="topbar-logo">📚 NEB Eng.</span>
+    <a class="nav-pill" href="#short-stories">📖 Short Stories</a>
+    <a class="nav-pill" href="#poems">🎵 Poems</a>
+    <a class="nav-pill" href="#essays">✍ Essays</a>
+    <a class="nav-pill" href="#plays">🎭 One-Act Plays</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">NEB Class 12 · Section Two: Literature</div>
+  <h1>Complete English<br/><em>Literature Study Guide</em></h1>
+  <p class="hero-sub">Summaries · NEB Questions · Model Answers · Themes · Literary Devices — All in one place</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-n">7</div><div class="stat-l">Short Stories</div></div>
+    <div class="stat"><div class="stat-n">5</div><div class="stat-l">Poems</div></div>
+    <div class="stat"><div class="stat-n">5</div><div class="stat-l">Essays</div></div>
+    <div class="stat"><div class="stat-n">3</div><div class="stat-l">One-Act Plays</div></div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ══════════════════════════════════════
+     UNIT ONE: SHORT STORIES
+══════════════════════════════════════ -->
+<div class="section-head" id="short-stories">
+  <div class="section-icon icon-story">📖</div>
+  <div class="section-title">Unit One: Short Stories<span>Tim Winton · Kate Chopin · Anita Desai · H.G. Wells · Lu Xun · Shankar Lamichhane · Gabriel García Márquez</span></div>
+</div>
+
+<!-- SS1: Neighbours -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num">1</div>
+    <div class="ch-meta">
+      <div class="ch-title">Neighbours</div>
+      <div class="ch-author">by <strong>Tim Winton</strong> · Page 180</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'summary')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'themes')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'qa2')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'qa5')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="summary">
+      <div class="summary-text">
+        <p>A young Australian couple move into a new neighbourhood filled with immigrants from various European and Mediterranean countries. Initially, both sides are suspicious and distant from each other — the couple finds the neighbours strange, and the neighbours also keep to themselves.</p>
+        <p>Over time, small gestures of kindness begin to break the ice. The neighbours bring food, help with gardening, and show genuine warmth. When the wife becomes pregnant, the entire neighbourhood takes an active interest and celebrates joyfully when the baby is born.</p>
+        <p>The story ends on a hopeful note — the couple realizes that despite cultural differences, human connection and community are universal. The birth of the baby symbolizes the birth of understanding and acceptance between different cultures.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="themes">
+      <div class="chips">
+        <span class="chip chip-theme">Cross-cultural Understanding</span>
+        <span class="chip chip-theme">Community & Belonging</span>
+        <span class="chip chip-theme">Breaking Stereotypes</span>
+        <span class="chip chip-theme">Multiculturalism</span>
+      </div>
+      <p style="font-size:.85rem;color:#444;margin-bottom:10px"><strong>Key Characters:</strong></p>
+      <div class="chips">
+        <span class="chip chip-char">Young Couple (protagonists)</span>
+        <span class="chip chip-char">European Neighbours</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Literary Device</th><th>Example / Explanation</th></tr>
+        <tr><td>Symbolism</td><td>The newborn baby = new hope, unity between cultures</td></tr>
+        <tr><td>Irony</td><td>Those who seemed "strange" become the closest support system</td></tr>
+        <tr><td>Third Person Narration</td><td>Objective view allows reader to see both sides</td></tr>
+        <tr><td>Metaphor</td><td>Gardening together = building relationships</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="qa2">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> Why were the couple and their neighbours initially distant from each other? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">The couple found their neighbours' customs, language, and behaviour unfamiliar and strange. Similarly, the neighbours were also reserved. The cultural and language barrier created suspicion and distance between them, preventing early communication.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is the significance of the baby's birth in the story?</div>
+        <div class="qa-a">The baby's birth symbolizes new hope and unity. It brings the entire neighbourhood together in celebration, breaking down all cultural barriers. It represents the idea that human experiences like birth transcend cultural differences.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> Who are the neighbours in the story?</div>
+        <div class="qa-a">The neighbours are a group of European and Mediterranean immigrants — including Macedonians, Poles, and others — living in Australia. They have distinct cultural traditions different from the young Australian couple who moves into the area.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="qa5">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> How does the story "Neighbours" promote the idea of cross-cultural understanding? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">
+          <p>Tim Winton's "Neighbours" beautifully illustrates how cultural barriers can be broken through small acts of kindness and shared humanity.</p>
+          <ul>
+            <li><strong>Initial Mistrust:</strong> The young couple and their immigrant neighbours are initially suspicious of each other due to language and cultural differences.</li>
+            <li><strong>Small Acts Break Barriers:</strong> Gradually, neighbours bring food, help with gardening, and show genuine interest — small gestures that begin building bridges.</li>
+            <li><strong>Shared Human Experience:</strong> The wife's pregnancy becomes a universal event that all neighbours celebrate, regardless of their backgrounds.</li>
+            <li><strong>Unity at Birth:</strong> When the baby is born, the whole neighbourhood rejoices together — showing that fundamental human emotions unite all cultures.</li>
+            <li><strong>Message of Acceptance:</strong> The couple ultimately learns that their "strange" neighbours are warm, generous people. Prejudice dissolves through lived experience.</li>
+          </ul>
+          <div class="conc">The story teaches that multicultural coexistence is not only possible but deeply enriching. True neighbourliness transcends race, language, and culture.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SS2: A Respectable Woman -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num">2</div>
+    <div class="ch-meta">
+      <div class="ch-title">A Respectable Woman</div>
+      <div class="ch-author">by <strong>Kate Chopin</strong> · Page 184</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sum2')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'th2')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2m2')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5m2')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sum2">
+      <div class="summary-text">
+        <p>Mrs. Baroda is a wealthy, refined woman whose husband Gaston invites his friend Gouvernail to stay at their plantation. Mrs. Baroda is initially annoyed by Gouvernail's presence as she had planned a quiet time alone with her husband.</p>
+        <p>However, as she spends time with Gouvernail, she finds herself unexpectedly attracted to him. He is quiet, intellectual, and unlike what she expected. One night by the river, she almost gives in to her feelings but controls herself and leaves — suppressing her desires to remain "respectable."</p>
+        <p>She goes away to visit friends to avoid temptation. At the end of the story, she tells her husband she wants Gouvernail to visit again next year — suggesting she is now ready to act on her feelings, raising questions about her intentions and the meaning of "respectability."</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="th2">
+      <div class="chips">
+        <span class="chip chip-theme">Women's Desire & Repression</span>
+        <span class="chip chip-theme">Social Conformity vs. Freedom</span>
+        <span class="chip chip-theme">Marriage & Fidelity</span>
+        <span class="chip chip-theme">Feminism</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-char">Mrs. Baroda</span>
+        <span class="chip chip-char">Gaston Baroda (husband)</span>
+        <span class="chip chip-char">Gouvernail (guest)</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Literary Device</th><th>Explanation</th></tr>
+        <tr><td>Irony</td><td>Title is ironic — she is "respectable" only because she suppresses her feelings</td></tr>
+        <tr><td>Symbolism</td><td>Night/darkness = hidden desires; river = her flowing, suppressed emotions</td></tr>
+        <tr><td>Open Ending</td><td>Final line is ambiguous — reader questions her true intention</td></tr>
+        <tr><td>Characterization</td><td>Mrs. Baroda is complex — not simply good or bad</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2m2">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> Why did Mrs. Baroda dislike Gouvernail at first? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">Mrs. Baroda had planned to spend quiet time alone with her husband. She expected Gouvernail to be dull and unwanted company. She was initially annoyed by his calm, reserved personality which she found hard to understand and connect with.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> Why does Mrs. Baroda go away to her friends?</div>
+        <div class="qa-a">She goes away to escape her growing attraction towards Gouvernail. She is afraid she will act on her feelings and destroy her "respectable" social image. The trip is her attempt to stay loyal to her husband by removing herself from temptation.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is ironic about the title "A Respectable Woman"?</div>
+        <div class="qa-a">The irony is that Mrs. Baroda is only "respectable" because she controls her desires — not because she doesn't have them. Her respectability is a social performance, not a true moral state. At the end, she plans to invite Gouvernail back, hinting her true nature may surface.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5m2">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> Discuss the character of Mrs. Baroda. How does she represent the conflict between social expectation and personal desire? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">
+          <p>Kate Chopin presents Mrs. Baroda as a complex woman torn between societal norms and her inner desires.</p>
+          <ul>
+            <li><strong>Initial Dislike → Attraction:</strong> She first dislikes Gouvernail but gradually feels drawn to him — showing that desire is uncontrollable and instinctive.</li>
+            <li><strong>Respectable Exterior:</strong> As a wealthy plantation wife, she is expected to be proper, loyal, and dignified — pressures she deeply feels.</li>
+            <li><strong>Night Scene:</strong> The river scene is climactic — she nearly expresses her feelings but stops herself. This shows the powerful grip of social expectation.</li>
+            <li><strong>Self-imposed Exile:</strong> She leaves for her friends' home voluntarily — a sacrifice of her personal freedom to maintain social respectability.</li>
+            <li><strong>Ambiguous Ending:</strong> Her final invitation to bring Gouvernail back again suggests she may no longer want to suppress her desires, questioning what "respectable" truly means.</li>
+          </ul>
+          <div class="conc">Mrs. Baroda represents the 19th-century woman trapped between what society expects and what she truly feels. Chopin uses her to challenge the definition of respectability itself.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SS3: A Devoted Son -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num">3</div>
+    <div class="ch-meta">
+      <div class="ch-title">A Devoted Son</div>
+      <div class="ch-author">by <strong>Anita Desai</strong> · Page 189</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sum3')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'th3')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2m3')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5m3')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sum3">
+      <div class="summary-text">
+        <p>Rakesh is an exceptionally brilliant boy from a humble Indian family who earns top marks, becomes a doctor, and eventually heads a successful hospital. His parents, especially his father Varma, are extremely proud of him. He is praised by the entire neighbourhood as the ideal devoted son — obedient, successful, and respectful.</p>
+        <p>However, as Rakesh's father ages and falls ill, Rakesh uses his medical knowledge to strictly control Varma's diet and lifestyle. He removes fried foods, sweets, and all pleasures from the old man's life in the name of health.</p>
+        <p>Old Varma is deeply unhappy. He begs the vegetable vendor to sneak him a sweet, curses his son, and wishes for death. The story ends with Varma lying helplessly in his bed, unable to enjoy even the simplest pleasures, while Rakesh believes he is being the perfect devoted son.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="th3">
+      <div class="chips">
+        <span class="chip chip-theme">False Devotion vs. True Love</span>
+        <span class="chip chip-theme">Generation Gap</span>
+        <span class="chip chip-theme">Role Reversal</span>
+        <span class="chip chip-theme">Old Age & Dignity</span>
+        <span class="chip chip-theme">Tradition vs. Modernity</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-char">Rakesh (devoted but cold son)</span>
+        <span class="chip chip-char">Varma (old, helpless father)</span>
+        <span class="chip chip-char">Rakesh's wife & mother</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Irony</td><td>The "devoted" son makes his father's life miserable</td></tr>
+        <tr><td>Role Reversal</td><td>The father who raised Rakesh now needs to beg for food from a child</td></tr>
+        <tr><td>Symbolism</td><td>Food = joy, dignity, freedom — all taken away by Rakesh</td></tr>
+        <tr><td>Imagery</td><td>Vivid images of old Varma's suffering create emotional impact</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2m3">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> Why does old Varma curse his son despite Rakesh being so successful? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">Varma curses Rakesh because, despite his success, Rakesh treats him like a patient rather than a father. He denies Varma his favourite foods and all simple pleasures under the pretext of health. Varma feels controlled, undignified, and emotionally abandoned.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is ironic about the story's title?</div>
+        <div class="qa-a">The title "A Devoted Son" is deeply ironic. Rakesh appears to be the ideal devoted son to the outside world, but his devotion actually strips his father of joy and dignity. He is devoted to duty, not to his father's happiness — making the title a bitter irony.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5m3">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> What is the main theme of "A Devoted Son"? Discuss with reference to Rakesh and Varma. <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">
+          <p>Anita Desai's story powerfully explores the theme of false devotion — showing that care without love and empathy is not true devotion.</p>
+          <ul>
+            <li><strong>Devotion as Performance:</strong> Rakesh follows every external expectation — topping exams, marrying who his parents choose, touching their feet — but these are social rituals, not heartfelt love.</li>
+            <li><strong>Power and Control:</strong> As Rakesh gains power through his medical career, he begins to control his father completely, removing all joy under the guise of health care.</li>
+            <li><strong>Loss of Dignity:</strong> Varma, once a proud provider, is reduced to begging a vegetable seller for a sweet. His dignity is completely destroyed by his own son.</li>
+            <li><strong>Role Reversal:</strong> The father who once sacrificed for Rakesh now suffers at Rakesh's hands — a painful irony that reveals how power corrupts even family bonds.</li>
+            <li><strong>True Devotion:</strong> The story implies that real devotion means respecting elders' happiness, freedom, and emotional needs — not just keeping them medically alive.</li>
+          </ul>
+          <div class="conc">Desai warns that devotion without warmth becomes a kind of cruelty. The most loving act can be letting the aged live with joy and dignity, not just prolonged life.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SS4: The Treasure in the Forest -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num">4</div>
+    <div class="ch-meta">
+      <div class="ch-title">The Treasure in the Forest</div>
+      <div class="ch-author">by <strong>H. G. Wells</strong> · Page 199</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sum4')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'th4')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2m4')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5m4')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sum4">
+      <div class="summary-text">
+        <p>Two men, Evans and Hooker, travel to a tropical island following a map they found on a dead Chinese man. The map leads them to a hidden treasure — a chest of gold ingots buried in the forest by the Chinese man.</p>
+        <p>As they dig up and examine the treasure, Evans notices thorns on the surrounding plants. He accidentally pricks himself with a poisoned spine. He begins hallucinating and sees the dead Chinese man's face. He falls unconscious and dies from the poison.</p>
+        <p>Hooker, who also handled the plants, begins to feel the same symptoms. He sees Evans lying dead, panics, and starts hallucinating as well. The story ends ambiguously — suggesting Hooker too will die from the poison, a punishment for their greed.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="th4">
+      <div class="chips">
+        <span class="chip chip-theme">Greed and Its Consequences</span>
+        <span class="chip chip-theme">Crime Does Not Pay</span>
+        <span class="chip chip-theme">Mystery & Suspense</span>
+        <span class="chip chip-theme">Justice / Karma</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-char">Evans</span>
+        <span class="chip chip-char">Hooker</span>
+        <span class="chip chip-char">Dead Chinese man (Chang-hi)</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Foreshadowing</td><td>The dead man's map hints that the treasure is dangerous</td></tr>
+        <tr><td>Irony</td><td>The treasure they seek becomes the cause of their death</td></tr>
+        <tr><td>Suspense</td><td>H.G. Wells builds tension masterfully throughout</td></tr>
+        <tr><td>Symbolism</td><td>Poisoned thorns = nature punishing greed</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2m4">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How does Evans die in the story? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">Evans dies after being pricked by a poisoned thorn from the plants guarding the treasure. The poison causes him to hallucinate — he sees the dead Chinese man's face — and he gradually loses consciousness and dies. His death is a direct consequence of his greedy pursuit of treasure.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is the moral lesson of "The Treasure in the Forest"?</div>
+        <div class="qa-a">The story teaches that greed is self-destructive. Evans and Hooker risk their lives to steal treasure from a dead man, and they are punished by the natural poison guarding it. The story shows that dishonest pursuit of wealth leads to ruin — crime does not pay.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5m4">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> Discuss the theme of greed and its consequences in "The Treasure in the Forest." <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">
+          <p>H.G. Wells uses this suspenseful story to deliver a clear moral: unchecked greed leads to self-destruction.</p>
+          <ul>
+            <li><strong>Foundation of Greed:</strong> Evans and Hooker find a map on a dead man and immediately plan to claim his treasure — showing their greed from the very start of the story.</li>
+            <li><strong>Willingness to Take Risk:</strong> They journey to a remote tropical island, facing danger purely for the hope of gold — greed blinds them to the real risks.</li>
+            <li><strong>Natural Punishment:</strong> The treasure is surrounded by poisonous thorned plants — nature itself acts as a guardian, punishing those who seek the gold with selfish intent.</li>
+            <li><strong>Evans' Death:</strong> Evans pricked by a thorn hallucinate and dies — his fate shows that the very thing they desired becomes their killer.</li>
+            <li><strong>Hooker's Likely Fate:</strong> The story ends with Hooker also showing symptoms — implying he too will die. Both men are destroyed equally by their shared greed.</li>
+          </ul>
+          <div class="conc">The story is a timeless warning: wealth gained through dishonesty and greed never brings happiness — it brings only destruction and death.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SS5: My Old Home -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num">5</div>
+    <div class="ch-meta">
+      <div class="ch-title">My Old Home</div>
+      <div class="ch-author">by <strong>Lu Xun</strong> · Page 208</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sum5')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'th5')">🎨 Themes</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2m5')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5m5')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sum5">
+      <div class="summary-text">
+        <p>The narrator returns to his childhood home in China after twenty years to help his family relocate. He is overwhelmed by how desolate and decayed the village has become compared to his vibrant memories of it.</p>
+        <p>He meets his childhood friend Runtu, now a poor, middle-aged peasant farmer. The narrator had remembered Runtu as a brave, energetic, and joyful boy. But now Runtu is worn down by poverty, suffering, and class oppression — he formally addresses the narrator as "Master," revealing the painful social hierarchy between them.</p>
+        <p>The narrator also meets Runtu's son and his own nephew. He reflects that he does not want the next generation to experience the same class divisions and misery. The story ends with the narrator expressing hope for a new, equal society — comparing hope to a road: it is created by those who walk on it.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="th5">
+      <div class="chips">
+        <span class="chip chip-theme">Class Inequality</span>
+        <span class="chip chip-theme">Loss of Innocence</span>
+        <span class="chip chip-theme">Nostalgia vs. Reality</span>
+        <span class="chip chip-theme">Hope for the Future</span>
+        <span class="chip chip-theme">Social Change</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-char">Narrator (Lu Xun himself)</span>
+        <span class="chip chip-char">Runtu (childhood friend)</span>
+        <span class="chip chip-char">Hongliu (narrator's nephew)</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Contrast</td><td>Young Runtu vs. old Runtu = innocence vs. suffering</td></tr>
+        <tr><td>Symbolism</td><td>The old home = the decaying feudal society of old China</td></tr>
+        <tr><td>Metaphor</td><td>Hope is like a road — made by those who walk it</td></tr>
+        <tr><td>First Person Narration</td><td>Creates intimacy and emotional depth</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2m5">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How has Runtu changed from childhood to adulthood? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">As a child, Runtu was energetic, brave, and free-spirited — he hunted under moonlight and told exciting stories. As an adult, he is worn down by poverty, excessive taxation, and social oppression. He has become silent, dull, and calls the narrator "Master," showing how class inequality destroyed his spirit.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What does the narrator mean when he compares hope to a road?</div>
+        <div class="qa-a">The narrator means that hope, like a road, does not exist by itself — it is created by people who strive for it. Just as roads are formed when enough people walk on them, a better future is possible only when people work together to create it. It is a message of optimism and collective action.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5m5">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> What does "My Old Home" say about social class and inequality? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">
+          <p>Lu Xun uses the story to powerfully critique China's feudal class system and its devastating effect on ordinary people.</p>
+          <ul>
+            <li><strong>Childhood Equality:</strong> As children, the narrator and Runtu were equals — they played, shared stories, and enjoyed genuine friendship without awareness of class.</li>
+            <li><strong>Adult Division:</strong> Years later, Runtu calls the narrator "Master" — a single word that reveals how deeply social hierarchy has poisoned their relationship and Runtu's self-worth.</li>
+            <li><strong>Poverty's Destruction:</strong> Multiple taxes, a large family, crop failures, and exploitation have broken Runtu — showing how class oppression destroys individuals physically and emotionally.</li>
+            <li><strong>The Decayed Village:</strong> The desolate village represents how feudal social structures have rotted the foundations of Chinese society.</li>
+            <li><strong>Hope for Change:</strong> The narrator's hope for a future where children like Hongliu and Runtu's son live as equals reflects Lu Xun's vision of a just, classless society.</li>
+          </ul>
+          <div class="conc">Lu Xun uses personal memory and social observation to indict the class system and express his deep belief in the possibility of a more equal China.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SS6: Half-closed Eyes... -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num">6</div>
+    <div class="ch-meta">
+      <div class="ch-title">The Half-closed Eyes of the Buddha and the Slowly Sinking Sun</div>
+      <div class="ch-author">by <strong>Shankar Lamichhane</strong> · Page 218</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sum6')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'th6')">🎨 Themes</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2m6')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5m6')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sum6">
+      <div class="summary-text">
+        <p>A Nepali guide takes a foreign tourist on a journey through Nepal — visiting palaces, temples, and the Kathmandu Valley. The guide is deeply knowledgeable about Nepalese culture, history, art, and philosophy.</p>
+        <p>As they walk, the guide speaks about the Buddhist philosophy of seeing — how the half-closed eyes of the Buddha symbolize looking inward as well as outward. The slowly sinking sun represents the passage of time and the transience of life.</p>
+        <p>The story is essentially a rich philosophical and cultural conversation. The guide explains that Nepal's beauty lies not just in its physical landscape but in its spiritual depth. The tourist comes from a world of materialism, while the guide represents Nepal's ancient wisdom. The story promotes Nepal's cultural heritage with pride.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="th6">
+      <div class="chips">
+        <span class="chip chip-theme">Nepalese Culture & Heritage</span>
+        <span class="chip chip-theme">East vs. West / Materialism vs. Spirituality</span>
+        <span class="chip chip-theme">Buddhist Philosophy</span>
+        <span class="chip chip-theme">National Pride</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-char">The Guide (narrator)</span>
+        <span class="chip chip-char">The Foreign Tourist</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Symbolism</td><td>Half-closed eyes = inward reflection; sinking sun = passing time</td></tr>
+        <tr><td>Dialogue</td><td>Used to contrast Eastern and Western world-views</td></tr>
+        <tr><td>Cultural Allusion</td><td>Rich references to Buddhist and Hindu traditions</td></tr>
+        <tr><td>Descriptive Imagery</td><td>Beautiful portrayal of Nepal's landscape and art</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2m6">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is the significance of the "half-closed eyes of the Buddha"? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">The half-closed eyes of the Buddha symbolize a balance between inner reflection and awareness of the outer world. They suggest that true wisdom comes from looking both inward (self-awareness) and outward (compassion for others). The guide uses this symbol to explain Nepal's deep spiritual philosophy.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What does "the slowly sinking sun" represent in the story?</div>
+        <div class="qa-a">The slowly sinking sun represents the passage of time and the impermanence of life. It also reflects the philosophical Buddhist idea that everything is transient — beauty, life, even civilizations. The guide uses it to encourage the tourist to value present moments and deeper meaning over material things.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5m6">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> How does Shankar Lamichhane present Nepal's cultural identity through this story? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">
+          <p>Lamichhane uses the guide-tourist framework to proudly showcase Nepal's unique cultural, artistic, and philosophical heritage.</p>
+          <ul>
+            <li><strong>Rich Cultural Knowledge:</strong> The guide describes Nepal's temples, palaces, art, and rituals with depth and pride — showing Nepal as a land of ancient wisdom, not just scenic beauty.</li>
+            <li><strong>Buddhist Philosophy:</strong> The half-closed eyes of the Buddha are used to present Nepal's unique spiritual lens — the idea of balanced perception that Western materialism lacks.</li>
+            <li><strong>East vs. West Contrast:</strong> The tourist represents a materialistic Western mindset; the guide represents Nepal's spiritual depth — positioning Nepalese culture as profound and self-sufficient.</li>
+            <li><strong>National Pride:</strong> The guide speaks not as a servant but as a knowledgeable intellectual who owns his heritage — reflecting the story's message of cultural dignity.</li>
+            <li><strong>Transience and Beauty:</strong> The sinking sun reminds both guide and tourist that Nepal's beauty is timeless but life is short — urging deeper engagement with culture rather than surface tourism.</li>
+          </ul>
+          <div class="conc">Lamichhane's story is both a celebration and a defense of Nepalese culture — showing that Nepal's greatest treasure is not its mountains but its philosophy and wisdom.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SS7: A Very Old Man with Enormous Wings -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num">7</div>
+    <div class="ch-meta">
+      <div class="ch-title">A Very Old Man with Enormous Wings</div>
+      <div class="ch-author">by <strong>Gabriel García Márquez</strong> · Page 224</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sum7')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'th7')">🎨 Themes</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2m7')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5m7')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sum7">
+      <div class="summary-text">
+        <p>During a storm, a very old man with enormous wings crashes in Pelayo's courtyard. His wings are dirty and worn. People initially believe he is an angel. Father Gonzaga, the local priest, is skeptical and writes to the Church for guidance.</p>
+        <p>Meanwhile, Pelayo and his wife Elisenda lock the old man in a chicken coop and begin charging people admission to see him. He becomes a spectacle — people treat him cruelly, pulling his feathers, throwing stones, and branding him with irons to see if he is alive.</p>
+        <p>He performs some minor miracles — unusual and imperfect ones. A spider-woman who was changed for disobeying her parents becomes a bigger attraction. Eventually the angel recovers, his wings grow back, and he flies away. Elisenda watches him go, relieved.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="th7">
+      <div class="chips">
+        <span class="chip chip-theme">Human Cruelty & Indifference</span>
+        <span class="chip chip-theme">Faith vs. Superstition</span>
+        <span class="chip chip-theme">Exploitation of the Vulnerable</span>
+        <span class="chip chip-theme">Magic Realism</span>
+        <span class="chip chip-theme">Greed</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-char">Old Man (angel?)</span>
+        <span class="chip chip-char">Pelayo & Elisenda</span>
+        <span class="chip chip-char">Father Gonzaga</span>
+        <span class="chip chip-char">Spider-woman</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Magic Realism</td><td>An angel appears in ordinary life — treated as ordinary spectacle</td></tr>
+        <tr><td>Irony</td><td>People recognize an angel but treat him with cruelty</td></tr>
+        <tr><td>Symbolism</td><td>Chicken coop = society's tendency to imprison what it does not understand</td></tr>
+        <tr><td>Satire</td><td>Márquez satirizes Church authority, human greed, and blind faith</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2m7">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How do the villagers treat the old man with enormous wings? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">The villagers treat the old man with cruelty and indifference despite believing he may be an angel. They lock him in a chicken coop, pull his feathers, throw stones, and brand him. Pelayo and Elisenda exploit him for money. The villagers see him as entertainment, not as a sacred being.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is magic realism in the context of this story?</div>
+        <div class="qa-a">Magic realism is a literary style where magical or supernatural elements appear in an otherwise realistic setting without surprise. In this story, an angel lands in a courtyard and is treated like any ordinary problem — locked up, exploited, and eventually forgotten. The miraculous is made mundane, revealing how society responds to the extraordinary.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5m7">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> What does the story reveal about human nature? Discuss with examples. <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">
+          <p>García Márquez uses the extraordinary figure of a winged old man to hold a mirror to some of the worst aspects of human behaviour.</p>
+          <ul>
+            <li><strong>Cruelty:</strong> Despite believing the old man might be an angel, the villagers poke him with sticks, pull his feathers, and brand him — showing that humans can be cruel even to beings they claim to revere.</li>
+            <li><strong>Greed:</strong> Pelayo and Elisenda exploit the angel for profit, charging admission fees and building a house with the money — turning a sacred encounter into a business opportunity.</li>
+            <li><strong>Short Attention Span:</strong> When the spider-woman arrives, people instantly forget the angel — showing how fickle human interest is and how quickly the extraordinary becomes ordinary.</li>
+            <li><strong>Failure of Faith:</strong> Father Gonzaga writes to Rome for answers rather than showing compassion — representing institutional religion's bureaucratic failure to respond with humanity.</li>
+            <li><strong>Indifference:</strong> When the angel finally flies away, Elisenda feels only relief — not wonder or gratitude — a devastating comment on human ingratitude.</li>
+          </ul>
+          <div class="conc">The story is a profound satire of humanity — showing that we fail to recognize and honour true grace when it appears before us.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     UNIT TWO: POEMS
+══════════════════════════════════════ -->
+<div class="section-head" id="poems">
+  <div class="section-icon icon-poem" style="background:linear-gradient(135deg,#6c3483,#9b59b6)">🎵</div>
+  <div class="section-title">Unit Two: Poems<span>Emily Dickinson · Dylan Thomas · Julia de Burgos · Ben Okri · Abhi Subedi</span></div>
+</div>
+
+<!-- P1: A Day -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num purple">1</div>
+    <div class="ch-meta">
+      <div class="ch-title">A Day</div>
+      <div class="ch-author">by <strong>Emily Dickinson</strong> · Page 232</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sump1')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'thp1')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2p1')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5p1')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sump1">
+      <div class="summary-text">
+        <p>Emily Dickinson describes a complete day — from sunrise to sunset — through the innocent eyes of a child speaker. The first stanza describes dawn: the sun rises like a ribbon, mountains untie their bonnets, squirrels run, bees go to work. Everything is joyful and full of life.</p>
+        <p>The second stanza describes sunset: the hills untie their purple sashes, the bobolink (bird) is gone, and the news of the day fades. A child is confused — they don't understand sunset and ask an elder to explain it.</p>
+        <p>The poem uses metaphor and personification extensively, presenting nature as alive and human-like. It celebrates the daily cycle of life while also touching on themes of innocence, wonder, and the mystery of natural phenomena.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="thp1">
+      <div class="chips">
+        <span class="chip chip-theme">Nature & Its Cycle</span>
+        <span class="chip chip-theme">Innocence & Wonder</span>
+        <span class="chip chip-theme">Life and Death (Dawn/Dusk)</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Example</th></tr>
+        <tr><td>Personification</td><td>Mountains "untie their bonnets," hills "untie purple sashes"</td></tr>
+        <tr><td>Metaphor</td><td>Sun rising like "a ribbon"; hills wearing "purple sashes"</td></tr>
+        <tr><td>Child's Perspective</td><td>Creates wonder and innocence; sunset is mysterious to child</td></tr>
+        <tr><td>Symbolism</td><td>Dawn = life/birth; Dusk = death/mystery</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2p1">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How does Dickinson personify nature in "A Day"? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">Dickinson gives nature human-like qualities — mountains "untie their bonnets," hills "untie their purple sashes," and the sun emerges "like a ribbon." These personifications make nature seem alive, warm, and playful, matching the innocent child's perspective through which the poem is narrated.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is the significance of the child speaker in the poem?</div>
+        <div class="qa-a">The child speaker creates a sense of innocence, wonder, and fresh perception. The child experiences nature without assumptions — finding sunrise magical and sunset mysterious. This perspective allows Dickinson to present ordinary daily events as extraordinary, reminding adult readers to see the world with fresh eyes.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5p1">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> Describe how Dickinson presents the cycle of a day in the poem "A Day." <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Dawn — Full of Life:</strong> The poem opens with sunrise described through vivid imagery: the sun appears "like a ribbon," mountains "untie their bonnets," squirrels run, and bees work — the world wakes up joyfully.</li>
+            <li><strong>Human-like Nature:</strong> Dickinson personifies every element of nature, making dawn feel warm, social, and alive — reflecting the child's wonder-filled perception.</li>
+            <li><strong>Dusk — Mysterious:</strong> In the second stanza, the sun sets, hills "untie purple sashes," and the bobolink disappears. The tone shifts to quietness and mild melancholy.</li>
+            <li><strong>Child's Confusion:</strong> The child does not understand the sunset and asks for an explanation — suggesting that death and endings are mysteries even to the innocent.</li>
+            <li><strong>Symbolic Meaning:</strong> The day represents the cycle of human life — dawn is birth/youth, dusk is aging/death — giving the poem a deeper philosophical dimension beyond its simple surface.</li>
+          </ul>
+          <div class="conc">Dickinson captures both the joy of existence and the mystery of endings in a single day, using a child's innocent eyes to make ancient truths feel new and fresh.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- P2: Every Morning I Wake -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num purple">2</div>
+    <div class="ch-meta">
+      <div class="ch-title">Every Morning I Wake</div>
+      <div class="ch-author">by <strong>Dylan Thomas</strong> · Page 234</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sump2')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'thp2')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2p2')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5p2')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sump2">
+      <div class="summary-text">
+        <p>Dylan Thomas's poem is a passionate prayer — every morning the speaker wakes up and prays for the continuation and celebration of life in the Welsh town of Llareggub. The poem praises simple joys: the baker, the fisherman, the milkmaid, the sinners, the saints — all the ordinary people of the community.</p>
+        <p>The speaker prays that life may always be full — full of small pleasures, full of ordinary human activity. The poem celebrates existence itself, suggesting that even the smallest, most ordinary daily life is worth blessing and preserving.</p>
+        <p>The tone is both reverent and joyful — the speaker does not ask for grand miracles but simply for the continuation of the beautiful ordinary. It is a deeply humanistic prayer for everyday life.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="thp2">
+      <div class="chips">
+        <span class="chip chip-theme">Celebration of Life</span>
+        <span class="chip chip-theme">Prayer & Gratitude</span>
+        <span class="chip chip-theme">Community & Ordinary People</span>
+        <span class="chip chip-theme">Humanism</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Prayer/Invocation</td><td>Poem structured as a morning prayer</td></tr>
+        <tr><td>Catalogue/Enumeration</td><td>Lists ordinary people and their activities to celebrate community life</td></tr>
+        <tr><td>Imagery</td><td>Vivid images of bakers, fishermen, and simple community activities</td></tr>
+        <tr><td>Tone</td><td>Joyful, grateful, celebratory — almost hymn-like</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2p2">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What does the speaker pray for every morning in Dylan Thomas's poem? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">Every morning, the speaker prays for the continuation of ordinary life — for the baker, the fisherman, the community members of Llareggub to continue their daily activities. He prays not for grand things but for simple joys and the preservation of everyday human life in all its beautiful ordinariness.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How does Thomas celebrate ordinary life in this poem?</div>
+        <div class="qa-a">Thomas celebrates ordinary life by listing common community members — bakers, fishermen, sinners, saints — and treating each of them as worthy of blessing. By making their simple daily activities the subject of a prayer, he elevates the mundane to the sacred, suggesting every life has beauty and worth.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5p2">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> Discuss the theme of celebration of life in "Every Morning I Wake."</div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Prayer as Celebration:</strong> The poem is structured as a morning prayer — transforming gratitude for daily life into a spiritual act, suggesting that simply being alive is worthy of reverence.</li>
+            <li><strong>Ordinary is Sacred:</strong> Thomas lists ordinary community members — bakers, fishermen, milkmaids, sinners — and blesses them all equally, placing the mundane on the same level as the holy.</li>
+            <li><strong>Community as Life:</strong> The poem celebrates the community of Llareggub as a whole — implying that life's richness comes from human connection and shared daily rhythms, not from extraordinary events.</li>
+            <li><strong>Joyful Acceptance:</strong> The speaker does not ask for change or improvement — he prays only for continuation, showing deep acceptance and love for life exactly as it is.</li>
+            <li><strong>Humanistic Message:</strong> The poem's deepest message is profoundly humanistic — all lives, especially small, ordinary ones, are beautiful and worth celebrating every single morning.</li>
+          </ul>
+          <div class="conc">Thomas invites readers to find meaning not in grand events but in the gentle, repeating rhythms of everyday community life — a timeless message of gratitude.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- P3: I Was My Own Route -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num purple">3</div>
+    <div class="ch-meta">
+      <div class="ch-title">I Was My Own Route</div>
+      <div class="ch-author">by <strong>Julia de Burgos</strong> · Page 236</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sump3')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'thp3')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2p3')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5p3')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sump3">
+      <div class="summary-text">
+        <p>Julia de Burgos, a Puerto Rican feminist poet, writes a powerful declaration of female independence. The speaker describes breaking free from the path laid out for women by society and men. She says she turned her back on male-defined routes and created her own path.</p>
+        <p>She rejects the role of being a passive follower. She describes how she refused to follow the traditional path expected of women and instead became her own compass — her own beginning and end. She connected with nature — the forest, stars, the wind — to find her own identity.</p>
+        <p>The poem is an assertion of female self-determination and authenticity. The speaker's journey is both literal (walking her own path) and metaphorical (defining her own life on her own terms).</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="thp3">
+      <div class="chips">
+        <span class="chip chip-theme">Female Independence</span>
+        <span class="chip chip-theme">Self-Identity & Authenticity</span>
+        <span class="chip chip-theme">Rebellion Against Patriarchy</span>
+        <span class="chip chip-theme">Feminism</span>
+        <span class="chip chip-theme">Connection with Nature</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Metaphor</td><td>"Route" = life path; being one's own route = self-determination</td></tr>
+        <tr><td>First Person Voice</td><td>Strong, assertive "I" throughout — emphasizes individual identity</td></tr>
+        <tr><td>Nature Imagery</td><td>Stars, wind, forest = freedom, authenticity beyond social constraints</td></tr>
+        <tr><td>Free Verse</td><td>Lack of fixed structure mirrors the speaker's freedom from convention</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2p3">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What does "I was my own route" mean in the poem? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">"I was my own route" means the speaker refused to follow paths set by men or society and instead created her own life's direction. It is a metaphor for female self-determination — the speaker became her own guide, her own beginning and destination, asserting full ownership of her identity and choices.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How does the poem express feminist ideas?</div>
+        <div class="qa-a">The poem expresses feminist ideas by showing a woman boldly rejecting the roles imposed on her by patriarchal society. The speaker refuses to follow a man-defined path, connects with nature on her own terms, and declares herself to be her own compass — asserting that women have the right to self-define and self-direct their lives.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5p3">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> Discuss the theme of women's freedom and self-identity in "I Was My Own Route." <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Rejection of Male Authority:</strong> The speaker explicitly states she turned her back on men's routes — rejecting the idea that women's lives should be defined, directed, or validated by men.</li>
+            <li><strong>Creating Her Own Path:</strong> "I was my own route" is a powerful declaration — she does not follow; she creates. This represents the feminist ideal of women authoring their own lives.</li>
+            <li><strong>Nature as Ally:</strong> By connecting with the forest, stars, and wind, the speaker finds freedom in the natural world — beyond society's patriarchal constraints, nature accepts her fully.</li>
+            <li><strong>Bold, Unashamed Voice:</strong> The poem's strong first-person voice throughout — "I," "my," "myself" — is itself a feminist act, insisting on female subjectivity and visibility.</li>
+            <li><strong>Universal Message:</strong> Though rooted in the Puerto Rican context, the poem speaks universally to all women everywhere who are told to follow rather than lead.</li>
+          </ul>
+          <div class="conc">Julia de Burgos celebrates female independence not as rebellion but as the most natural and courageous expression of human dignity — a woman being fully, freely herself.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- P4: The Awakening Age -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num purple">4</div>
+    <div class="ch-meta">
+      <div class="ch-title">The Awakening Age</div>
+      <div class="ch-author">by <strong>Ben Okri</strong> · Page 239</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sump4')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'thp4')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2p4')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5p4')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sump4">
+      <div class="summary-text">
+        <p>Ben Okri's poem is a call to action for a new generation to rise and create a better world. The speaker declares that we are living in an "awakening age" — a time when people must become conscious, responsible, and courageous enough to build a more just, equal society.</p>
+        <p>The poem encourages people not to be passive victims of circumstances but to actively shape their destiny. It calls for humanity to move beyond old hatreds, divisions, and ways of thinking and embrace a new dawn of unity and purpose.</p>
+        <p>Okri's tone is inspirational and urgent. He draws on African and universal human experience to argue that the time for change is now — and that each person has a responsibility to contribute to a new, awakened world. The poem is optimistic but demanding.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="thp4">
+      <div class="chips">
+        <span class="chip chip-theme">Hope & Renewal</span>
+        <span class="chip chip-theme">Social Responsibility</span>
+        <span class="chip chip-theme">Awakening / Consciousness</span>
+        <span class="chip chip-theme">New Generation / Change</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Metaphor</td><td>"Awakening age" = a time of rising consciousness and social change</td></tr>
+        <tr><td>Imperative Mood</td><td>Commands like "rise," "dream," "create" — inspire and demand action</td></tr>
+        <tr><td>Imagery</td><td>Dawn imagery = new beginning, hope, light after darkness</td></tr>
+        <tr><td>Anaphora</td><td>Repetition of phrases builds urgency and momentum</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2p4">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is the "awakening age" according to Ben Okri? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">The "awakening age" refers to a new era when people become conscious, aware, and responsible enough to create a better world. Okri sees this as a time when the new generation must rise beyond old divisions, hatreds, and passivity and take active, courageous steps to build a more just and equal society.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is the message of Ben Okri's poem for young people?</div>
+        <div class="qa-a">Okri's message for young people is to wake up, take responsibility, and actively shape the future. He calls on the new generation not to be passive but to dream boldly and work to create a better, more just world. He believes the young generation holds the power and responsibility to transform society.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5p4">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> How does Ben Okri use the poem to call for social change and awakening?</div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Title as Message:</strong> "The Awakening Age" itself declares that this is a pivotal historical moment — a time that demands conscious, awakened action from every person.</li>
+            <li><strong>Call to Action:</strong> The poem uses imperative verbs — "rise," "dream," "create" — to directly challenge readers to stop being passive and take ownership of the world's future.</li>
+            <li><strong>Beyond Old Divisions:</strong> Okri urges people to abandon old hatreds, tribal divisions, and ways of thinking that have held humanity back — a message of unity and forward movement.</li>
+            <li><strong>Responsibility of Youth:</strong> The poem specifically addresses the new generation, positioning them as the ones who must carry the torch of change — it is both a tribute and a demand.</li>
+            <li><strong>Optimistic Vision:</strong> Despite the urgency, the poem's tone is ultimately hopeful — Okri believes change is possible if enough people awaken to their responsibility and potential.</li>
+          </ul>
+          <div class="conc">Okri's poem is a powerful manifesto for social consciousness — challenging every reader to contribute actively to the creation of a more awakened, equitable, and compassionate world.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- P5: Soft Storm -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num purple">5</div>
+    <div class="ch-meta">
+      <div class="ch-title">Soft Storm</div>
+      <div class="ch-author">by <strong>Abhi Subedi</strong> · Page 241</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sump5')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'thp5')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2p5')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5p5')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sump5">
+      <div class="summary-text">
+        <p>Abhi Subedi's "Soft Storm" is a protest poem against political violence, oppression, and the suffering of people in Nepal. The "soft storm" is a paradox — a storm that is quiet but deeply destructive — representing the silent, cumulative pain of people living under political instability and violence.</p>
+        <p>The poem describes the suffering of ordinary Nepali citizens — the voices that are silenced, the people who disappear, the hopes that are crushed. Yet there is also the promise of resilience and the survival of the human spirit.</p>
+        <p>Subedi writes with controlled emotion — the "softness" of the storm suggests that this is not an explosion of anger but a deep, quiet, persistent pain. The poem speaks to Nepal's political turmoil and the endurance of its people.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="thp5">
+      <div class="chips">
+        <span class="chip chip-theme">Political Oppression & Violence</span>
+        <span class="chip chip-theme">Human Suffering & Resilience</span>
+        <span class="chip chip-theme">Hope Amid Pain</span>
+        <span class="chip chip-theme">Nepalese Political Context</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Oxymoron</td><td>"Soft Storm" — contradictory words that capture quiet but deep pain</td></tr>
+        <tr><td>Symbolism</td><td>Storm = political chaos; "soft" = the quiet suffering of common people</td></tr>
+        <tr><td>Imagery</td><td>Images of silence, disappearance, and endurance</td></tr>
+        <tr><td>Controlled Tone</td><td>Quiet anger rather than outrage — more powerful and lasting</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2p5">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What does "soft storm" mean in the poem? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">"Soft storm" is an oxymoron — a combination of contradictory words. It represents political violence and oppression that does not roar loudly but quietly and deeply destroys ordinary lives. The "softness" captures the silent, persistent suffering of people under authoritarian rule — pain that accumulates without dramatic announcement.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is the political context of Abhi Subedi's poem?</div>
+        <div class="qa-a">The poem is written against the backdrop of Nepal's political turmoil — including periods of violence, conflict, and instability. Subedi speaks about the suffering of ordinary Nepali people whose voices are silenced by political power. The poem is a protest against oppression and a tribute to the resilience of those who endure it.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5p5">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> How does Abhi Subedi use the oxymoron "soft storm" to convey political suffering?</div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Paradox as Truth:</strong> The oxymoron "soft storm" perfectly captures the nature of political oppression — it is not always loud or dramatic, but its destruction is deep and lasting.</li>
+            <li><strong>Ordinary People's Pain:</strong> The "softness" refers to the quiet, unrecognized suffering of ordinary Nepali citizens — those who disappear, are silenced, or simply endure without making headlines.</li>
+            <li><strong>Persistent Destruction:</strong> A soft storm does not blow over quickly — it lingers. Subedi uses this to show that political violence leaves long-lasting trauma in communities and families.</li>
+            <li><strong>Controlled Emotion = Greater Power:</strong> By keeping the tone quiet rather than explosive, Subedi achieves greater emotional depth — the poem's restraint mirrors the oppressed people's forced silence.</li>
+            <li><strong>Hope Survives:</strong> Despite the storm's destruction, the human spirit survives — the poem ends with the possibility of endurance and even quiet hope, suggesting that the people will outlast the oppression.</li>
+          </ul>
+          <div class="conc">Subedi's "Soft Storm" is a masterpiece of political poetry — finding in quiet, controlled words a more powerful protest than loud anger could ever achieve.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     UNIT THREE: ESSAYS
+══════════════════════════════════════ -->
+<div class="section-head" id="essays">
+  <div class="section-icon icon-essay">✍</div>
+  <div class="section-title">Unit Three: Essays<span>Oliver Sacks · Stephen L. Nock · Bertrand Russell · Yuval Noah Harari · Samuel Moyn</span></div>
+</div>
+
+<!-- E1: On Libraries -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num green">1</div>
+    <div class="ch-meta">
+      <div class="ch-title">On Libraries</div>
+      <div class="ch-author">by <strong>Oliver Sacks</strong> · Page 247</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sume1')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'the1')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2e1')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5e1')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sume1">
+      <div class="summary-text">
+        <p>Oliver Sacks, a famous neurologist and writer, writes a personal and passionate essay about the importance of libraries in human life. He recalls how libraries shaped his childhood — the smell of books, the sense of infinite possibility in a library, the feeling of being surrounded by human knowledge and imagination.</p>
+        <p>He argues that libraries are not just buildings full of books — they are democratic spaces where knowledge is free and accessible to all, regardless of wealth or status. In an increasingly digital world, he defends the irreplaceable value of physical books and libraries.</p>
+        <p>He also discusses how libraries serve communities — as places of quiet, of learning, of refuge. Sacks mourns the decline of libraries due to budget cuts and digitalization and urges society to protect and value them as essential institutions of civilization.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="the1">
+      <div class="chips">
+        <span class="chip chip-theme">Value of Libraries & Books</span>
+        <span class="chip chip-theme">Knowledge as Freedom</span>
+        <span class="chip chip-theme">Digital Age vs. Physical Books</span>
+        <span class="chip chip-theme">Democracy of Knowledge</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Personal Essay Style</td><td>Autobiographical — Sacks shares his own library memories</td></tr>
+        <tr><td>Nostalgia</td><td>Warm recollection of childhood library experiences</td></tr>
+        <tr><td>Argument</td><td>Logical defense of libraries as essential civic institutions</td></tr>
+        <tr><td>Imagery</td><td>Sensory description of books, smells, quietness of libraries</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2e1">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> Why does Sacks argue that libraries are important in the digital age? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">Sacks argues that libraries offer something digital platforms cannot fully replace: free, democratic, community access to knowledge. Libraries serve as physical gathering spaces, offer books that are curated and reliable, and provide quiet refuge for those who cannot afford internet or devices. They preserve the human tradition of collective, shared learning.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How did libraries shape Sacks' childhood?</div>
+        <div class="qa-a">Libraries gave young Sacks access to a world of ideas beyond his family's reach. He describes the sensory joy of books — their smell, their weight, the infinite possibilities they offered. Libraries gave him intellectual freedom, sparked curiosity, and shaped him into the scientist and writer he became.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5e1">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> What is Sacks' central argument about the role of libraries in society? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Libraries as Democratic Spaces:</strong> Sacks argues that libraries make knowledge free and accessible to everyone — the poor and the rich alike — making them the most democratic institutions in society.</li>
+            <li><strong>Personal Transformation:</strong> Through personal memoir, he shows how libraries shaped his own intellectual life — arguing that such transformation is possible for all children who have access to them.</li>
+            <li><strong>Community Refuge:</strong> Libraries serve as safe, quiet spaces for study, rest, and community gathering — functions that go far beyond mere book storage.</li>
+            <li><strong>Defence Against Digitalization:</strong> While acknowledging the value of the internet, Sacks argues physical libraries offer permanence, reliability, and a form of knowledge-sharing that digital platforms cannot replicate.</li>
+            <li><strong>Civic Responsibility:</strong> He calls on society to protect and fund libraries — arguing that cutting library budgets is an attack on democracy and equal opportunity itself.</li>
+          </ul>
+          <div class="conc">For Sacks, libraries are not luxuries — they are the foundations of a just, knowledgeable, and civilized society that every community has the right and responsibility to preserve.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E2: Marriage as Social Institution -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num green">2</div>
+    <div class="ch-meta">
+      <div class="ch-title">Marriage as a Social Institution</div>
+      <div class="ch-author">by <strong>Stephen L. Nock</strong> · Page 252</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sume2')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'the2')">🎨 Themes</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2e2')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5e2')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sume2">
+      <div class="summary-text">
+        <p>Stephen L. Nock, a sociologist, examines marriage not as a romantic or religious institution but as a social institution — a set of social norms, rules, and expectations that organize human society.</p>
+        <p>He argues that marriage performs crucial social functions: it defines relationships between partners, establishes the legitimacy of children, creates economic partnerships, and provides a stable framework for society. Marriage, he says, is essentially a public act — not just a private romantic decision.</p>
+        <p>Nock also examines how marriage has changed in modern times — rising divorce rates, cohabitation without marriage, changing gender roles. He argues that despite these changes, marriage remains the most significant social institution for organizing adult life and raising children in most societies.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="the2">
+      <div class="chips">
+        <span class="chip chip-theme">Marriage as Social Institution</span>
+        <span class="chip chip-theme">Changing Family Structures</span>
+        <span class="chip chip-theme">Social Norms & Expectations</span>
+        <span class="chip chip-theme">Gender Roles</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Analytical Essay</td><td>Sociological, evidence-based analysis rather than personal opinion</td></tr>
+        <tr><td>Definition</td><td>Carefully defines "social institution" to build his argument</td></tr>
+        <tr><td>Comparison</td><td>Traditional vs. modern marriage patterns</td></tr>
+        <tr><td>Data/Evidence</td><td>References social trends to support claims</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2e2">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How does Nock define marriage as a social institution? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">Nock defines marriage as a set of social norms, rules, and expectations that publicly organize the relationship between two people and society. Unlike a purely private romantic choice, marriage is a public institution that establishes legal rights, responsibilities, and the social legitimacy of children — making it fundamental to how society is organized.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What social functions does marriage serve according to Nock?</div>
+        <div class="qa-a">According to Nock, marriage serves several social functions: it defines the relationship between partners and their responsibilities; establishes the legitimacy of children; creates economic partnerships; provides stable frameworks for child-rearing; and signals social maturity and commitment in most cultures. These functions make marriage far more than a personal or romantic choice.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5e2">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> Discuss the main arguments Nock makes about marriage in modern society. <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Marriage is Public, Not Private:</strong> Nock's central argument is that marriage is not merely a personal romantic decision — it is a public social institution with legal, economic, and community dimensions.</li>
+            <li><strong>Organizational Functions:</strong> Marriage organizes adult life by establishing roles, responsibilities, economic partnerships, and clear expectations for both partners and society.</li>
+            <li><strong>Legitimacy of Children:</strong> Historically and sociologically, marriage has been the primary mechanism by which societies establish the legal and social status of children.</li>
+            <li><strong>Modern Challenges:</strong> Nock acknowledges that rising divorce rates, cohabitation, and changing gender roles have challenged traditional marriage — but argues the institution itself remains central to social organization.</li>
+            <li><strong>Enduring Relevance:</strong> Despite changes, marriage continues to be the institution most associated with adult stability, commitment, and family formation in most cultures worldwide.</li>
+          </ul>
+          <div class="conc">Nock's essay reminds us that marriage is not just a love story — it is one of humanity's most powerful and enduring social inventions, essential to how societies organize and sustain themselves.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E3: Knowledge and Wisdom -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num green">3</div>
+    <div class="ch-meta">
+      <div class="ch-title">Knowledge and Wisdom</div>
+      <div class="ch-author">by <strong>Bertrand Russell</strong> · Page 257</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sume3')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'the3')">🎨 Themes</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2e3')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5e3')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sume3">
+      <div class="summary-text">
+        <p>Bertrand Russell, the great philosopher, argues that knowledge and wisdom are not the same thing — and that the modern world has too much knowledge but too little wisdom. Knowledge is the accumulation of facts and information; wisdom is knowing how to use knowledge for good.</p>
+        <p>Russell identifies several components of wisdom: breadth of outlook, freedom from personal bias, the ability to consider long-term consequences, and genuine concern for human welfare. A person can be highly knowledgeable but still be foolish if they lack these qualities.</p>
+        <p>He gives examples of how scientific knowledge without wisdom has led to wars, nuclear weapons, and environmental destruction. He argues that education must focus not just on filling minds with facts but on developing the kind of broad, compassionate, and unbiased thinking that constitutes wisdom.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="the3">
+      <div class="chips">
+        <span class="chip chip-theme">Knowledge vs. Wisdom</span>
+        <span class="chip chip-theme">Role of Education</span>
+        <span class="chip chip-theme">Human Welfare & Ethics</span>
+        <span class="chip chip-theme">Science & Responsibility</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Definition & Distinction</td><td>Russell carefully defines both knowledge and wisdom</td></tr>
+        <tr><td>Examples</td><td>Uses nuclear weapons and war as examples of knowledge without wisdom</td></tr>
+        <tr><td>Argument</td><td>Logical, step-by-step philosophical argument</td></tr>
+        <tr><td>Persuasive Tone</td><td>Appeals to reason and shared concern for humanity</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2e3">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is the difference between knowledge and wisdom according to Russell? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">According to Russell, knowledge is the collection of facts, information, and skills acquired through study. Wisdom, however, is knowing how to use that knowledge well — for the benefit of humanity and with awareness of consequences. A person can possess great knowledge but still lack wisdom if they use it selfishly, narrowly, or harmfully.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What are the components of wisdom according to Russell?</div>
+        <div class="qa-a">Russell identifies several components of wisdom: breadth of outlook (seeing beyond personal interest), freedom from prejudice and bias, the ability to consider long-term consequences of actions, and a genuine concern for human welfare as a whole. These qualities allow a person to use knowledge responsibly and beneficially.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5e3">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> Discuss Russell's argument that the modern world has too much knowledge but too little wisdom. <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Knowledge Without Wisdom is Dangerous:</strong> Russell argues that scientific progress has given humanity tremendous knowledge — but without wisdom, this knowledge produces nuclear weapons, wars, and environmental destruction rather than human flourishing.</li>
+            <li><strong>Wisdom Requires Breadth:</strong> A wise person does not think only about their immediate community or nation but considers the welfare of all humanity — a perspective that narrow technical knowledge alone cannot provide.</li>
+            <li><strong>Education Must Change:</strong> Russell argues that modern education focuses too heavily on facts and technical skills. True education must also cultivate wisdom — broad thinking, ethical awareness, and freedom from bias.</li>
+            <li><strong>Consequences of Bias:</strong> Knowledge applied through national, racial, or economic bias leads to terrible outcomes. Wisdom requires stepping beyond such biases to consider universal human good.</li>
+            <li><strong>Wisdom is Active:</strong> Wisdom is not passive — it requires the active choice to use knowledge for good, to think long-term, and to prioritize human welfare over personal or national gain.</li>
+          </ul>
+          <div class="conc">Russell's essay is a philosophical warning for the modern age: progress without wisdom is not progress at all — it is merely more powerful destruction.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E4: Humility -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num green">4</div>
+    <div class="ch-meta">
+      <div class="ch-title">Humility</div>
+      <div class="ch-author">by <strong>Yuval Noah Harari</strong> · Page 261</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sume4')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'the4')">🎨 Themes</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2e4')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5e4')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sume4">
+      <div class="summary-text">
+        <p>Yuval Noah Harari, the celebrated historian and author of Sapiens, writes about the concept of humility — arguing that no nation, religion, or culture has a monopoly on moral or historical truth. He challenges the deeply held human tendency to believe that one's own civilization, religion, or culture is the most important in history.</p>
+        <p>Harari examines claims by various civilizations — Western, Chinese, Islamic, Jewish, Indian — all of which believe they are the center of world history. He uses historical analysis to show these claims are often exaggerated or simply false.</p>
+        <p>His argument is that true humility requires accepting that all civilizations have contributed to human history, that all have both achievements and failures, and that no single group has the right to claim exclusive moral or historical superiority. Humility, he argues, is not weakness — it is the beginning of genuine understanding.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="the4">
+      <div class="chips">
+        <span class="chip chip-theme">Humility & Cultural Arrogance</span>
+        <span class="chip chip-theme">History & Civilization</span>
+        <span class="chip chip-theme">Nationalism & Ethnocentrism</span>
+        <span class="chip chip-theme">Universal Human Values</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Historical Examples</td><td>Uses specific civilizational claims to expose cultural arrogance</td></tr>
+        <tr><td>Irony</td><td>Shows how similar different civilizations' self-glorifying claims are</td></tr>
+        <tr><td>Comparative Analysis</td><td>Compares multiple cultures' claims about their own importance</td></tr>
+        <tr><td>Provocative Argument</td><td>Challenges all readers' assumptions about their own culture</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2e4">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What does Harari mean by humility? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">For Harari, humility means accepting that no single nation, religion, or civilization is the center of world history or morality. It means recognizing that all cultures have both achievements and failures, and that no group has a monopoly on truth or virtue. Humility is the intellectual honesty to see ourselves and our culture clearly and without exaggeration.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How does Harari challenge national or cultural pride in his essay?</div>
+        <div class="qa-a">Harari challenges cultural pride by showing that virtually every civilization — Western, Chinese, Jewish, Islamic, Indian — claims to be the most important contributor to human history. By pointing out how similar these self-glorifying narratives are, he reveals them as biased, exaggerated, and ultimately unable to all be true simultaneously.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5e4">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> What is the central message of Harari's essay "Humility"? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>No Culture Owns History:</strong> Harari's central message is that no single civilization can legitimately claim to be the center or pinnacle of human history — all such claims are expressions of cultural bias rather than historical fact.</li>
+            <li><strong>Universal Pattern of Arrogance:</strong> He shows that Western, Chinese, Jewish, Indian, and other civilizations all make similar claims of superiority — the very similarity reveals these as human tendencies, not historical truths.</li>
+            <li><strong>Humility as Intellectual Honesty:</strong> True humility is not weakness or self-deprecation — it is the honest, clear-eyed recognition of one's own culture's limitations alongside its achievements.</li>
+            <li><strong>Historical Understanding:</strong> Genuine understanding of history requires stepping outside one's own cultural narrative and considering contributions from all civilizations without prejudice.</li>
+            <li><strong>Path to Peace:</strong> Harari implies that cultural humility is also a path to global peace — when nations and cultures stop claiming exclusive moral superiority, dialogue and cooperation become possible.</li>
+          </ul>
+          <div class="conc">Harari argues that humility is not just a personal virtue but a historical and political necessity — the foundation for a more honest, cooperative, and peaceful world.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- E5: Human Rights and the Age of Inequality -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num green">5</div>
+    <div class="ch-meta">
+      <div class="ch-title">Human Rights and the Age of Inequality</div>
+      <div class="ch-author">by <strong>Samuel Moyn</strong> · Page 265</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sume5')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'the5')">🎨 Themes</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2e5')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5e5')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sume5">
+      <div class="summary-text">
+        <p>Samuel Moyn, a legal historian, makes a provocative argument: that the global human rights movement, while morally important, has failed to address economic inequality — and may have even allowed it to grow unchallenged.</p>
+        <p>He argues that the human rights movement focuses heavily on civil and political rights (freedom of speech, protection from torture) but largely ignores economic rights — the right to a living wage, to economic security, to a fair share of society's wealth. While human rights advocates fought for dignity, neoliberal economic policies widened the gap between rich and poor.</p>
+        <p>Moyn does not dismiss human rights — he argues they need to be expanded to include economic justice. He calls for a human rights framework that directly challenges the extreme inequality of the modern world, treating economic fairness as a fundamental human right, not an afterthought. The UDHR of 1948 is referenced as a foundational document.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="the5">
+      <div class="chips">
+        <span class="chip chip-theme">Human Rights & Economic Inequality</span>
+        <span class="chip chip-theme">Limitations of Human Rights Movement</span>
+        <span class="chip chip-theme">Economic Justice</span>
+        <span class="chip chip-theme">Neoliberalism</span>
+      </div>
+      <table class="dev-table" style="margin-top:10px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Critical Argument</td><td>Challenges the human rights movement from within — not opposing it, but pushing it further</td></tr>
+        <tr><td>Historical Evidence</td><td>Uses post-1948 history to trace the gap between rights and economic reality</td></tr>
+        <tr><td>Distinction</td><td>Separates civil/political rights from economic/social rights</td></tr>
+        <tr><td>Persuasive Essay</td><td>Uses logical argument to call for expanded definition of human rights</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2e5">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What is Moyn's main criticism of the human rights movement? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">Moyn's main criticism is that the human rights movement has focused too narrowly on civil and political rights while largely ignoring economic rights. As a result, while human rights advocates fought for individual freedoms, extreme economic inequality was allowed to grow unchallenged. He argues human rights must also guarantee economic fairness and security.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> When was the Universal Declaration of Human Rights established and why is it significant?</div>
+        <div class="qa-a">The Universal Declaration of Human Rights (UDHR) was established in 1948 by the United Nations. It is significant as the first global statement of rights that all human beings are entitled to — including civil, political, economic, social, and cultural rights. Moyn references it to argue that its economic rights provisions have been largely neglected in practice.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5e5">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> How does Moyn argue that human rights and economic inequality are connected? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Rights Without Economic Justice Are Incomplete:</strong> Moyn argues that formal rights — freedom of speech, right to vote — mean little to those suffering from extreme poverty. True human rights must include economic security.</li>
+            <li><strong>Historical Failure:</strong> Since 1948, the global human rights movement has made progress on civil liberties but failed to prevent rising economic inequality — showing a fundamental gap in its scope and ambition.</li>
+            <li><strong>Neoliberalism Unchallenged:</strong> While human rights advocates focused on individual freedoms, neoliberal economic policies that concentrated wealth in fewer hands were largely left unchallenged by human rights frameworks.</li>
+            <li><strong>Economic Rights as Human Rights:</strong> Moyn calls for expanding the definition of human rights to explicitly include economic equality — the right to fair wages, economic security, and a just share of societal wealth.</li>
+            <li><strong>A Call for Reform:</strong> His essay is not a rejection of human rights but a demand that the movement deepen its commitment — recognizing that dignity without economic security is hollow.</li>
+          </ul>
+          <div class="conc">Moyn challenges us to build a human rights movement worthy of its founding ideals — one that fights for both individual freedoms and economic justice with equal passion and urgency.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     UNIT FOUR: ONE-ACT PLAYS
+══════════════════════════════════════ -->
+<div class="section-head" id="plays">
+  <div class="section-icon icon-play">🎭</div>
+  <div class="section-title">Unit Four: One-Act Plays<span>Ferenc Molnar · August Strindberg · Bhimnidhi Tiwari</span></div>
+</div>
+
+<!-- PL1: A Matter of Husbands -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num red">1</div>
+    <div class="ch-meta">
+      <div class="ch-title">A Matter of Husbands</div>
+      <div class="ch-author">by <strong>Ferenc Molnar</strong> · Page 272</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sumpl1')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'thpl1')">🎨 Themes & Devices</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2pl1')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5pl1')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sumpl1">
+      <div class="summary-text">
+        <p>A famous and glamorous actress receives a visit from a rather ordinary, plain woman — the wife of a man who is rumoured to be the actress's lover. The wife has come to confront the actress about the affair.</p>
+        <p>The actress is witty, sophisticated, and comfortable. She handles the confrontation with cool intelligence. As they talk, the actress subtly but deliberately makes the wife feel inferior and insecure. The actress neither confirms nor denies the affair.</p>
+        <p>By the end, the wife leaves more confused and less confident than when she arrived. The actress has won the psychological battle without ever losing her composure. The play is a comedic but sharp exploration of female power, wit, intelligence, and the social dynamics of marriage and infidelity.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="thpl1">
+      <div class="chips">
+        <span class="chip chip-theme">Female Wit & Power</span>
+        <span class="chip chip-theme">Social Pretense & Class</span>
+        <span class="chip chip-theme">Marriage & Infidelity</span>
+        <span class="chip chip-theme">Satire of Social Norms</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-char">The Actress (protagonist)</span>
+        <span class="chip chip-char">The Wife (antagonist/visitor)</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Irony</td><td>The wife comes to win but leaves defeated</td></tr>
+        <tr><td>Wit & Dialogue</td><td>Sharp, clever exchanges define character and conflict</td></tr>
+        <tr><td>Satire</td><td>Mocks bourgeois marriage conventions and social pretense</td></tr>
+        <tr><td>Power Dynamics</td><td>The actress uses intelligence as power rather than emotion</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2pl1">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> Why does the wife visit the actress in "A Matter of Husbands"? <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">The wife visits the actress to confront her about the rumoured affair with her husband. She wants to protect her marriage and assert her position as the rightful wife. However, instead of gaining the upper hand, she is psychologically outmanoeuvred by the clever and composed actress and leaves more uncertain than when she arrived.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How does the actress handle the wife's confrontation?</div>
+        <div class="qa-a">The actress handles the confrontation with wit, composure, and psychological intelligence. She neither admits nor denies the affair. Instead, she subtly makes the wife feel inferior and insecure through clever conversation. She wins the psychological battle through intelligence and social grace rather than emotion or aggression.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5pl1">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> How does the play explore the theme of female power and intelligence? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Intelligence Over Emotion:</strong> The actress never loses her composure or resorts to emotional argument — she uses sharp intelligence and wit to control every moment of the confrontation.</li>
+            <li><strong>Psychological Superiority:</strong> Despite the wife holding the moral high ground (as the wronged party), the actress completely controls the psychological dynamics — never allowing the wife to define the terms of the discussion.</li>
+            <li><strong>Social Confidence:</strong> The actress's status and comfort in her own world gives her enormous power — she is on her own territory, speaks her own language, and is completely at ease.</li>
+            <li><strong>Subverting Expectations:</strong> The audience expects the wife to expose the actress — but Molnar subverts this, showing that in the battle of wit and social intelligence, the actress wins easily.</li>
+            <li><strong>Female Agency:</strong> The play shows a woman who defines herself on her own terms — not through her relationship with any man, but through her own intelligence, beauty, and social power.</li>
+          </ul>
+          <div class="conc">Molnar's play celebrates female intelligence as a genuine form of power — showing that a woman who thinks clearly and speaks cleverly can command any room and win any battle.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PL2: Facing Death -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num red">2</div>
+    <div class="ch-meta">
+      <div class="ch-title">Facing Death</div>
+      <div class="ch-author">by <strong>August Strindberg</strong> · Page 279</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sumpl2')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'thpl2')">🎨 Themes</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2pl2')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5pl2')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sumpl2">
+      <div class="summary-text">
+        <p>Monsieur Durand runs a failing pension (boarding house) in Switzerland. He is deeply in debt and has sacrificed everything — including his own health and comfort — to provide for his three ungrateful daughters. His wife is dead.</p>
+        <p>His daughters show no gratitude or love. They are selfish and indifferent to their father's suffering. Durand secretly decides to solve everything by setting fire to the pension — the insurance money will pay his debts and provide for his daughters, while he will die in the fire.</p>
+        <p>The play ends as Durand lights the fire — his final act of parental sacrifice, giving his life so that his daughters can survive. The play is a heartbreaking exploration of parental love, ingratitude, poverty, and the dignity of self-sacrifice.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="thpl2">
+      <div class="chips">
+        <span class="chip chip-theme">Parental Sacrifice & Love</span>
+        <span class="chip chip-theme">Ingratitude of Children</span>
+        <span class="chip chip-theme">Poverty & Desperation</span>
+        <span class="chip chip-theme">Self-sacrifice vs. Selfishness</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-char">Monsieur Durand (father)</span>
+        <span class="chip chip-char">Three daughters (Adele, Annette, Therese)</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Tragic Irony</td><td>The daughters don't know their father is about to die for them</td></tr>
+        <tr><td>Contrast</td><td>Durand's deep love vs. daughters' complete selfishness</td></tr>
+        <tr><td>Naturalism</td><td>Strindberg depicts poverty and family breakdown realistically</td></tr>
+        <tr><td>Symbolism</td><td>Fire = destruction that creates salvation; death that creates life</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2pl2">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> Why does Monsieur Durand decide to set fire to the pension? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">Durand sets fire to the pension so that his daughters can claim the insurance money and pay his debts. Crushed by poverty and debt, and knowing he cannot save the situation any other way, he decides to give his life. His death in the fire will be his final act of parental love — sacrificing himself so his daughters can live.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How are the daughters portrayed in "Facing Death"?</div>
+        <div class="qa-a">The three daughters are portrayed as ungrateful, selfish, and indifferent to their father's suffering. Despite all of Durand's sacrifices — selling his possessions, starving himself — they show no appreciation or affection. They argue, complain, and remain concerned only with their own comfort, making their father's tragic sacrifice even more heartbreaking.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5pl2">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> Discuss the theme of parental sacrifice in "Facing Death." <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Lifetime of Sacrifice:</strong> Durand has sacrificed his entire life for his daughters — his health, comfort, and savings — running a struggling pension to keep the family fed. His love is total and unconditional.</li>
+            <li><strong>Unrecognized Love:</strong> The tragedy is deepened by the daughters' complete ingratitude. Durand gives everything but receives nothing in return — no love, no thanks, no recognition of his suffering.</li>
+            <li><strong>Ultimate Sacrifice:</strong> Unable to escape debt and seeing no other solution, Durand chooses to give the ultimate sacrifice — his life — so his daughters can use the insurance money to survive after his death.</li>
+            <li><strong>Contrast with Ingratitude:</strong> By placing Durand's extraordinary love alongside the daughters' ordinary selfishness, Strindberg creates a devastating contrast that highlights the depth and tragedy of true parental love.</li>
+            <li><strong>Dignity in Death:</strong> Durand faces death not with despair but with quiet resolve — suggesting that even in this terrible act, he maintains the dignity of a father who loves beyond all limits.</li>
+          </ul>
+          <div class="conc">Strindberg's play is one of literature's most devastating portraits of parental love — showing that a father's love can survive poverty, ingratitude, and even death itself.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PL3: The Bull -->
+<div class="chapter">
+  <div class="ch-header" onclick="toggle(this)">
+    <div class="ch-num red">3</div>
+    <div class="ch-meta">
+      <div class="ch-title">The Bull</div>
+      <div class="ch-author">by <strong>Bhimnidhi Tiwari</strong> · Page 293</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'sumpl3')">📋 Summary</button>
+      <button class="tab-btn" onclick="switchTab(this,'thpl3')">🎨 Themes</button>
+      <button class="tab-btn" onclick="switchTab(this,'q2pl3')">2-Mark Q&A</button>
+      <button class="tab-btn" onclick="switchTab(this,'q5pl3')">5-Mark Q&A</button>
+    </div>
+    <div class="tab-panel active" id="sumpl3">
+      <div class="summary-text">
+        <p>"The Bull" is a classic Nepali one-act play by Bhimnidhi Tiwari. It is a satire set in a village where a bull belonging to a powerful local landlord causes damage — it destroys crops and harms villagers. However, because the bull belongs to a powerful man, no one dares complain or demand justice.</p>
+        <p>The play satirizes the corrupt feudal system in Nepali society — where the powerful abuse their position and the common people have no recourse. The bull becomes a symbol of unchecked power and authority that tramples on the rights of ordinary people.</p>
+        <p>The play uses humor and satire to expose serious social injustice. Through the comic situation of a bull causing chaos, Tiwari critiques the entire system of feudal power, bribery, and the powerlessness of ordinary villagers in the face of entrenched privilege.</p>
+      </div>
+    </div>
+    <div class="tab-panel" id="thpl3">
+      <div class="chips">
+        <span class="chip chip-theme">Social Injustice & Feudal Power</span>
+        <span class="chip chip-theme">Powerlessness of Common People</span>
+        <span class="chip chip-theme">Satire of Authority</span>
+        <span class="chip chip-theme">Corruption</span>
+        <span class="chip chip-theme">Nepalese Social Context</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-char">The Landlord / Zamindar</span>
+        <span class="chip chip-char">The Villagers</span>
+        <span class="chip chip-char">The Bull (symbol)</span>
+      </div>
+      <table class="dev-table" style="margin-top:14px">
+        <tr><th>Device</th><th>Explanation</th></tr>
+        <tr><td>Satire</td><td>Comedy used to expose serious social corruption and injustice</td></tr>
+        <tr><td>Symbolism</td><td>The Bull = unchecked power and authority of the ruling class</td></tr>
+        <tr><td>Irony</td><td>The obvious injustice cannot be addressed because of social hierarchy</td></tr>
+        <tr><td>Nepali Cultural Context</td><td>Rooted in Nepal's feudal social structures and village life</td></tr>
+      </table>
+    </div>
+    <div class="tab-panel" id="q2pl3">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> What does the bull symbolize in Tiwari's play? <span class="hot-tag">🔥 Most Repeated</span></div>
+        <div class="qa-a">The bull symbolizes the unchecked power and authority of the landlord class in Nepal's feudal society. Just as the bull destroys crops and harms villagers without consequence because of its powerful owner, the landlord class exploits and harms common people without facing any accountability or justice. The bull represents power that destroys with complete impunity.</div>
+      </div>
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark">2M</span> How does Tiwari use satire in "The Bull"?</div>
+        <div class="qa-a">Tiwari uses the comic situation of an out-of-control bull to satirize Nepal's corrupt feudal power structure. The humour of villagers unable to complain about a bull destroying their crops — simply because of who owns it — exposes the deeply serious social reality of powerlessness and injustice. Satire allows him to critique the system without direct confrontation.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="q5pl3">
+      <div class="qa-block">
+        <div class="qa-q"><span class="qa-mark five">5M</span> Discuss the social message of "The Bull" by Bhimnidhi Tiwari. <span class="hot-tag">🔥 Repeated</span></div>
+        <div class="qa-a">
+          <ul>
+            <li><strong>Satire of Feudal Power:</strong> The play satirizes Nepal's feudal system where landlords (zamindars) hold absolute power and ordinary people have no legal or social recourse against their abuse.</li>
+            <li><strong>The Bull as Symbol:</strong> The bull — powerful, destructive, and untouchable because of its owner — perfectly symbolizes how the ruling class operates: causing harm while remaining immune to consequences.</li>
+            <li><strong>Powerlessness of Common People:</strong> The villagers know they are wronged but cannot speak up. This silence in the face of obvious injustice represents the lived experience of millions of ordinary Nepali people under feudal rule.</li>
+            <li><strong>Comedy as Critique:</strong> By using humour and a seemingly trivial situation (a bull causing trouble), Tiwari makes the serious critique of social injustice accessible — the audience laughs, but the laughter is uncomfortable because the injustice is real.</li>
+            <li><strong>Call for Change:</strong> Beneath the comedy is a serious demand — for a society where the powerful are accountable, where ordinary people have rights, and where justice is not determined by social position.</li>
+          </ul>
+          <div class="conc">Tiwari's "The Bull" is a brilliant example of how comedy can carry serious social protest — using laughter to expose truths that direct criticism might not be able to reach.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end container -->
+
+<button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<footer>
+  <strong>EduBoost Nepal</strong> · NEB Class 12 English – Section Two: Literature<br/>
+  <span style="margin-top:6px;display:block">All Units Covered · Short Stories · Poems · Essays · One-Act Plays</span>
+</footer>
+
+<script>
+function toggle(header){
+  const body=header.nextElementSibling;
+  header.classList.toggle('open');
+  body.classList.toggle('open');
+}
+
+function switchTab(btn,panelId){
+  const card=btn.closest('.ch-body');
+  card.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  card.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  const target=card.querySelector('#'+panelId);
+  if(target) target.classList.add('active');
+}
+</script>
+</body>
+</html>
