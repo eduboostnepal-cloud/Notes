@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NEB Class 12 — English Examiner</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --ink: #1a1208;
+    --paper: #faf7f0;
+    --cream: #f0ead6;
+    --red: #c0392b;
+    --gold: #b8860b;
+    --blue: #1a3a5c;
+    --rule: #c8b89a;
+    --stamp: #8b3a2a;
+    --success: #2d6a4f;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--blue);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(
+      90deg, transparent, transparent 60px,
+      rgba(255,255,255,0.03) 60px, rgba(255,255,255,0.03) 61px
+    );
+  }
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 28px 24px 22px;
+    position: relative;
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 10px;
+  }
+  .seal {
+    width: 52px; height: 52px;
+    border: 2.5px solid var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    background: rgba(184,134,11,0.08);
+  }
+  .header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(18px, 4vw, 26px);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.15;
+  }
+  .header-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 6px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .gold-rule {
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    margin-top: 18px;
+  }
+
+  /* ── Controls ── */
+  .controls {
+    max-width: 860px;
+    margin: 28px auto 0;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  label.field-label {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .upload-zone {
+    border: 2px dashed var(--rule);
+    border-radius: 4px;
+    padding: 28px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    background: var(--cream);
+    position: relative;
+  }
+  .upload-zone:hover { border-color: var(--gold); background: #ece6d0; }
+  .upload-zone input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .upload-icon { font-size: 28px; margin-bottom: 8px; }
+  .upload-text { font-size: 14px; color: #6b5d45; }
+  .upload-text strong { color: var(--blue); }
+
+  #preview-img {
+    display: none;
+    max-width: 100%;
+    max-height: 300px;
+    border: 1.5px solid var(--rule);
+    border-radius: 4px;
+    margin-top: 12px;
+    object-fit: contain;
+  }
+
+  textarea {
+    width: 100%;
+    border: 1.5px solid var(--rule);
+    border-radius: 4px;
+    padding: 14px 16px;
+    font-family: 'Source Serif 4', serif;
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--cream);
+    resize: vertical;
+    min-height: 90px;
+    outline: none;
+    transition: border-color 0.2s;
+    line-height: 1.6;
+  }
+  textarea:focus { border-color: var(--blue); }
+
+  .mode-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .mode-tab {
+    padding: 7px 16px;
+    border: 1.5px solid var(--rule);
+    border-radius: 20px;
+    background: transparent;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    color: #6b5d45;
+    transition: all 0.18s;
+  }
+  .mode-tab.active, .mode-tab:hover {
+    background: var(--blue);
+    color: #fff;
+    border-color: var(--blue);
+  }
+
+  .submit-btn {
+    background: var(--red);
+    color: #fff;
+    border: none;
+    padding: 15px 32px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.2s, transform 0.1s;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .submit-btn:hover { background: #a93226; }
+  .submit-btn:active { transform: scale(0.98); }
+  .submit-btn:disabled { background: #aaa; cursor: not-allowed; }
+  .spinner {
+    width: 16px; height: 16px;
+    border: 2.5px solid rgba(255,255,255,0.4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    display: none;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Answer Sheet ── */
+  #answer-area {
+    max-width: 860px;
+    margin: 32px auto 60px;
+    padding: 0 24px;
+  }
+
+  .answer-sheet {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-top: 4px solid var(--red);
+    border-radius: 2px;
+    padding: 36px 40px;
+    position: relative;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+    animation: fadeUp 0.4s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .sheet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--cream);
+  }
+  .sheet-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--blue);
+  }
+  .stamp-badge {
+    background: var(--stamp);
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+
+  /* Question blocks */
+  .exam h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--blue);
+    margin: 28px 0 10px;
+    padding-left: 12px;
+    border-left: 3.5px solid var(--gold);
+  }
+  .exam h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin: 18px 0 6px;
+  }
+  .exam p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #2a1e0f;
+    margin-bottom: 8px;
+  }
+  .exam strong { color: var(--ink); }
+  .exam ul, .exam ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .exam li {
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 4px;
+  }
+  .exam hr {
+    border: none;
+    border-top: 1.5px dashed var(--rule);
+    margin: 22px 0;
+  }
+  .exam .tip-box {
+    background: #f0f7f0;
+    border: 1.5px solid #a8d5b5;
+    border-left: 4px solid var(--success);
+    border-radius: 3px;
+    padding: 14px 18px;
+    margin-top: 18px;
+  }
+  .exam .tip-box h3 {
+    color: var(--success);
+    margin-top: 0;
+  }
+  .exam .ans-line {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 8px;
+    padding: 6px 0;
+    border-bottom: 1px dotted var(--cream);
+  }
+  .ans-letter {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--red);
+    min-width: 24px;
+  }
+
+  .error-box {
+    background: #fdf0f0;
+    border: 1.5px solid #e8a0a0;
+    border-left: 4px solid var(--red);
+    border-radius: 3px;
+    padding: 14px 18px;
+    color: var(--red);
+    font-size: 14px;
+  }
+
+  /* Margin lines like exam paper */
+  .answer-sheet::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 56px;
+    width: 1.5px;
+    background: rgba(192,57,43,0.12);
+    pointer-events: none;
+  }
+
+  @media (max-width: 600px) {
+    .answer-sheet { padding: 24px 18px 24px 24px; }
+    .answer-sheet::before { left: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-top">
+      <div class="seal">NEB</div>
+      <div>
+        <div class="header-title">Class 12 English — AI Examiner</div>
+        <div class="header-sub">Board Exam Answer Writer · NEB Standard · Grade 12</div>
+      </div>
+    </div>
+    <div class="gold-rule"></div>
+  </div>
+</header>
+
+<div class="controls">
+
+  <div>
+    <label class="field-label">Upload Question Image (optional)</label>
+    <div class="upload-zone" id="upload-zone">
+      <input type="file" id="img-input" accept="image/*" />
+      <div class="upload-icon">📄</div>
+      <div class="upload-text">Tap to upload your question image<br><strong>JPG / PNG / WEBP</strong></div>
+    </div>
+    <img id="preview-img" alt="Uploaded question"/>
+  </div>
+
+  <div>
+    <label class="field-label">Your Question / Instructions</label>
+    <textarea id="user-question" placeholder="e.g. Answer Q7 grammar questions from the image in NEB board format.&#10;Or: Check my answer and give marks out of 10.&#10;Or: Give me 5 NEB-style practice questions on Reported Speech."></textarea>
+  </div>
+
+  <div>
+    <label class="field-label">Mode</label>
+    <div class="mode-tabs">
+      <button class="mode-tab active" data-mode="answer">✍️ Answer Questions</button>
+      <button class="mode-tab" data-mode="practice">📝 Practice Mode</button>
+      <button class="mode-tab" data-mode="check">✅ Check My Answer</button>
+      <button class="mode-tab" data-mode="explain">💡 Explain Concept</button>
+    </div>
+  </div>
+
+  <button class="submit-btn" id="submit-btn" onclick="submitQuestion()">
+    <span class="spinner" id="spinner"></span>
+    <span id="btn-text">Generate Answer Sheet</span>
+  </button>
+
+</div>
+
+<div id="answer-area"></div>
+
+<script>
+let selectedMode = 'answer';
+let imageBase64 = null;
+
+// Mode tabs
+document.querySelectorAll('.mode-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    selectedMode = tab.dataset.mode;
+  });
+});
+
+// Image upload
+document.getElementById('img-input').addEventListener('change', function() {
+  const file = this.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const dataUrl = e.target.result;
+    imageBase64 = dataUrl.split(',')[1];
+    const img = document.getElementById('preview-img');
+    img.src = dataUrl;
+    img.style.display = 'block';
+    document.querySelector('.upload-zone .upload-text').innerHTML =
+      `<strong>${file.name}</strong> — image loaded ✓`;
+  };
+  reader.readAsDataURL(file);
+});
+
+async function submitQuestion() {
+  const userQ = document.getElementById('user-question').value.trim();
+  if (!userQ && !imageBase64) {
+    alert('Please upload an image or type a question.');
+    return;
+  }
+
+  const btn = document.getElementById('submit-btn');
+  const spinner = document.getElementById('spinner');
+  const btnText = document.getElementById('btn-text');
+
+  btn.disabled = true;
+  spinner.style.display = 'block';
+  btnText.textContent = 'Generating...';
+
+  const modeInstructions = {
+    answer: 'Answer all visible questions in strict NEB Class 12 board exam format. Return clean HTML using <div class="exam"> with proper <h2>, <h3>, <p>, <ul> tags. Be precise, concise, and exam-oriented.',
+    practice: 'Generate 5 NEB Class 12-style practice questions based on the topic or image. Then provide full model answers in NEB board format. Use HTML structure.',
+    check: 'Act as a strict NEB examiner. Check the answer provided by the student. Give marks out of the full marks. Point out each mistake. Use HTML format.',
+    explain: 'Explain the grammar or vocabulary concept visible in the image or question. Keep it concise, exam-relevant, and use examples. Use HTML format.'
+  };
+
+  const systemPrompt = `You are a strict NEB Class 12 English board examiner and top-scorer answer writer.
+
+Rules:
+1. Extract ONLY questions visible in the image. Do NOT hallucinate.
+2. Answer in 100% NEB board exam format — correct, concise, no filler.
+3. Return ONLY clean HTML using <div class="exam"> structure.
+4. For grammar: give only the correct rewritten/completed sentence.
+5. For vocabulary MCQs: state the correct option with brief reason.
+6. For 15-mark writing: use Introduction → Body → Conclusion → Exam Tip structure.
+7. For exam tips, wrap in <div class="tip-box"><h3>📌 Exam Tips</h3><p>...</p></div>.
+8. Use <h2> for question numbers, <h3> for section labels, <p> for answers.
+9. Do NOT use markdown. Return ONLY HTML.
+10. Mode: ${selectedMode}. ${modeInstructions[selectedMode]}`;
+
+  try {
+    const messages = [];
+    if (imageBase64) {
+      messages.push({
+        role: 'user',
+        content: [
+          { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: imageBase64 } },
+          { type: 'text', text: userQ || 'Answer all questions from this image in NEB board exam format.' }
+        ]
+      });
+    } else {
+      messages.push({ role: 'user', content: userQ });
+    }
+
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 1000,
+        system: systemPrompt,
+        messages
+      })
+    });
+
+    const data = await response.json();
+    const html = data.content?.map(b => b.text || '').join('') || '';
+
+    document.getElementById('answer-area').innerHTML = `
+      <div class="answer-sheet">
+        <div class="sheet-header">
+          <div class="sheet-title">📋 NEB Answer Sheet</div>
+          <div class="stamp-badge">Board Standard</div>
+        </div>
+        ${html}
+      </div>`;
+
+  } catch (err) {
+    document.getElementById('answer-area').innerHTML = `
+      <div class="answer-sheet">
+        <div class="error-box">⚠️ Error: ${err.message}. Please try again.</div>
+      </div>`;
+  } finally {
+    btn.disabled = false;
+    spinner.style.display = 'none';
+    btnText.textContent = 'Generate Answer Sheet';
+    document.getElementById('answer-area').scrollIntoView({ behavior: 'smooth' });
+  }
+}
+</script>
+</body>
+</html>
